@@ -1,0 +1,105 @@
+/* Generales */
+
+* {
+    font-family: "Space Grotesk", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    background-image: url(../img/ecommerce.png);
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+h1 {
+    display: none;
+}
+
+.contenedor-principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+img {
+    width: 250px;
+}
+
+.contenedor-navegador {
+    margin-right: 1rem;
+}
+
+.contenedor-navegador nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contenedor-navegador nav ul a {
+    color: #000000;
+}
+
+.contenedor-main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contenedor-main p {
+    background-color: rgba(0, 0, 0, 0.773);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.contenedor-botones button {
+    background-color: rgba(0, 0, 0, 0.773);
+    color: rgb(255, 255, 255);
+    width: 98%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Media Query */
+
+@media (max-width: 620px) {
+    .contenedor-header {
+        flex-direction: column;
+    }
+    
+    .contenedor-navegador nav ul {
+        flex-direction: column;
+    }
+
+    .contenedor-main {
+        width: 90%;
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+    }
+}
